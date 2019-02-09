@@ -1,3 +1,162 @@
-body{
-	background-color: yellow;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900');
+
+body, html{
+	font-family: 'Montserrat', sans-serif;
+	margin: 0px;
+	padding: 0px;
 }
+
+
+.hero-ban{
+	background-color: #007FFF;
+ 	height: 100vh;
+ 	box-sizing: border-box;
+ 	position: relative;
+ 	overflow: hidden;
+ 	
+}
+
+.wrapper{
+	position: absolute;
+	width: 560px;
+	height: 482px;
+	top: 50%;
+	margin-top: -241px;
+	margin-left: 15%;
+	/*could also be:
+	left:50%;
+	margin-left:-520px;
+	*/
+	}
+
+/* I centered vertically usign the code on this page https://css-tricks.com/centering-css-complete-guide/ you also explained it */
+
+
+h1{
+	font-size: 50px;
+	font-weight: 900;
+}
+
+
+h2{
+	font-size: 40px;
+	font-weight: 900;
+}
+
+
+h3{
+	font-size: 30px;
+	font-weight: 400;
+}
+
+h4{
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.hero-ban h1{
+	color: white;
+	margin: 10px 0 0 0;
+}
+
+
+.hero-ban h3{
+	color: white;
+	margin: 20 0 40px 0;
+}
+
+
+.hero-ban h4, .hero-ban a{
+	color: white;
+	margin: 10px 0 0 0;
+}
+
+
+a.cta,
+button.cta{
+	background-color: #007FFF;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	display: inline-block;
+	padding: 20px 30px;
+	cursor: pointer;
+	box-shadow: 0 0 0 10px rgba(0,127,255,.15);
+	border-radius: 10px;
+}
+
+	/*border-radius: 10px;
+	border: 10px solid rgba(0,0,0,.15);
+	cta with square corners BUT border with rounded corners (outside)
+	*/
+
+	/* 
+	outline: 10px solid rgba(0,0,0,.15);
+	border-radius: 10px;
+	cta with rounded corners BUT border with square corners (inside rounded outside square)
+	*/
+
+
+a.alt,
+button.alt{
+	background-color: #FFD400;
+	color: black;
+	box-shadow: 0 0 0 10px rgba(0,0,0,.15);
+	}
+
+
+.character1{
+	position: absolute; top: 10%; right: 10%;
+	width: 362px;
+	height: 344px;
+	background: url(img/character1.png) no-repeat 0 0;
+	background-size: 100%;
+	transform: rotate(15deg);
+}
+
+.character2{
+	position: absolute; top: 210px; right: 280px;
+	width: 309px;
+	height: 371px;
+	background: url(img/character2.png) no-repeat 0 0;
+	background-size: 100%;
+}
+
+.character3{
+	position: absolute; bottom: 80px; right: 110px;
+	width: 297px;
+	height: 286px;
+	background: url(img/character3.png) no-repeat 0 0;
+	background-size: 100%;
+}
+
+
+
+/*
+
+		.wrapper{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.hero-banner{
+	background-color: #007FFF;
+	min-height: 100vh;
+	padding: 50px 20px;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+}
+
+.hero-banner .wrapper{
+	height: 464px;
+	position: absolute;
+	top: 50%;
+	margin-top: -232px;
+	left: 50%;
+	margin-left: -480px;
+}
+
+*/
+
