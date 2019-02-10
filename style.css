@@ -54,6 +54,11 @@ h4{
 	font-weight: 400;
 }
 
+p{
+	font-size: 28px;
+	font-weight: 300;
+}
+
 .hero-ban h1{
 	color: white;
 	margin: 10px 0 0 0;
@@ -86,6 +91,11 @@ button.cta{
 	border-radius: 10px;
 }
 
+a.cta:hover,
+button.cta:hover{
+		background-color: #47A1FC;
+}
+
 	/*border-radius: 10px;
 	border: 10px solid rgba(0,0,0,.15);
 	cta with square corners BUT border with rounded corners (outside)
@@ -97,7 +107,6 @@ button.cta{
 	cta with rounded corners BUT border with square corners (inside rounded outside square)
 	*/
 
-
 a.alt,
 button.alt{
 	background-color: #FFD400;
@@ -105,6 +114,9 @@ button.alt{
 	box-shadow: 0 0 0 10px rgba(0,0,0,.15);
 	}
 
+a.alt:hover{
+	background-color: #FFE460;
+}
 
 .character1{
 	position: absolute; top: 10%; right: 10%;
@@ -131,32 +143,94 @@ button.alt{
 	background-size: 100%;
 }
 
+nav{
+	background-color: white;
+	width: 100%;
+	height: 100px;
+	box-shadow: 0 5px 8px rgba(0,0,0,.2);
+	position: sticky;
+	z-index: 1;
+	top: 0;
+}
+
+nav .logo{
+	display: block;
+	position: absolute;
+	top: 50%;
+	background: url(img/logo.png) no-repeat 0 0;
+	background-size: 100%;
+	width: 300px;
+	height: 40px;
+	margin: -20px 0 0 30px;
+	overflow: hidden;
+	text-indent: -999px;
+}
+
+nav ul{
+padding: 0;
+margin: 0 20px 0 0;
+}
+
+nav ul li {
+	float: right;
+	display: block; /* remove the dot before? */
+}
+
+nav ul li a{
+	display: block; /*show the items inside the nav bar?*/
+	height: 100%; /*why?*/
+	box-sizing: border-box; /*I dont know it does*/
+	font-size: 30px;
+	text-decoration: none;
+	color: black;
+	line-height: 30px;
+	padding: 35px 20px;
+}
+
+nav ul li a:hover{
+	color:#007FFF;
+}
+
+nav ul li a:active{
+	color:#007FFF;
+}
+
+.more-info{
+	width: 960px;
+	margin: 80px auto;
+	text-align: center;
+}
+
+.more-info h2{
+	margin: 20px 0 0 0;
+}
+
+.more-info h3{
+	margin: 30px 0 50px 0;
+	line-height: 40px;
+}
+
+.highlight{
+	display: inline;
+	background-color: #EDEDED;
+	color: #FA8072;
+	padding: 1px 10px 5px;
+	font-weight: 700;
+	line-height: 40px;
+}
+
+.divider{
+	margin: 80px auto;
+	width: 500px;
+	height: 10px;
+	background-color: black;
+}
+
 
 
 /*
 
-		.wrapper{
-	width: 960px;
-	margin: 0 auto;
-}
 
-.hero-banner{
-	background-color: #007FFF;
-	min-height: 100vh;
-	padding: 50px 20px;
-	box-sizing: border-box;
-	position: relative;
-	overflow: hidden;
-}
-
-.hero-banner .wrapper{
-	height: 464px;
-	position: absolute;
-	top: 50%;
-	margin-top: -232px;
-	left: 50%;
-	margin-left: -480px;
-}
 
 */
 
