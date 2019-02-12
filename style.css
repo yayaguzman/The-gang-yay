@@ -6,7 +6,6 @@ body, html{
 	padding: 0px;
 }
 
-
 .hero-ban{
 	background-color: #007FFF;
  	height: 100vh;
@@ -329,6 +328,7 @@ footer a:hover{
 }
 
 .popup{
+	display: none;
 	position: fixed;
 	top: 0;
 	right: 0;
