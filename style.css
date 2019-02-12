@@ -13,7 +13,6 @@ body, html{
  	box-sizing: border-box;
  	position: relative;
  	overflow: hidden;
- 	
 }
 
 .textwrapper{
@@ -97,6 +96,8 @@ button.cta{
 	cursor: pointer;
 	box-shadow: 0 0 0 10px rgba(0,127,255,.15);
 	border-radius: 10px;
+	border: none;
+	outline: none;
 }
 
 a.cta:hover,
@@ -234,9 +235,6 @@ nav ul li a:active{
 	background-color: black;
 }
 
-.story {
-
-}
 
 .item-wholelist{
 	width: 450px;
@@ -246,7 +244,6 @@ nav ul li a:active{
 	box-sizing: border-box;
 	float: left;
 	position: relative;
-	
 }
 
 .item-wholelist li{
@@ -331,28 +328,95 @@ footer a:hover{
 	color: #007FFF;
 }
 
+.popup{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.popup.show{
+	display: block;
+}
+
+.close{
+	position: absolute;
+	background: #FA8072 url(img/close.png) no-repeat center center;
+	background-size: 50%;
+	height: 60px;
+	width: 60px;
+	top: -30px;
+	right: -30px;
+	text-indent: 999px;
+	border-radius: 50%;
+	border: none;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.popup .blanket-fullbg{
+	background-color: rgba(0,0,0,.7);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.popup .content-pop{
+	position: absolute;
+	box-sizing: border-box;
+	height: 540px;
+	width: 960px;
+	margin-top: -280px;
+	margin-left: -480px;
+	top: 50%;
+	left:50%;
+	background-color: white;
+	border-style: solid;
+	border-width: 4px;
+	padding: 30px 0 20px 0px;
+	text-align: center;
+}
+
+.popup .content-pop h2{
+	text-align: center;
+	margin: 20px 0 20px 0;
+}
+
+.popup .item-form{
+	float: left;
+	text-align: left;
+	margin: 10px 0 10px 50px;	
+	box-sizing: border-box;
+}
+
+.popup .item-form label{
+	display: block;
+	font-size: 20px;
+}
+
+.popup .item-form input[type="text"]{
+	width: 400px;
+	height: 70px;
+	box-sizing: border-box;
+	margin-top: 10px;
+	padding: 15px 20px;
+	border: 4px solid;
+	font-size: 26px;
+	display: block;
+	}
+
+.popup .cta{
+	margin-top: 30px;
+}
+
+
+
+
 /*
-
-<div class="story" id="story">
-
-		<ul class="item-list">
-			<li class="blue">Rock 'n Roll</li>
-			<li class="grey">&nbsp;</li>
-			<li class="draggyellow">Laughter</li>
-			<li class="red">Square Offs</li>
-			<li class="rose">Circuitous Routes</li>
-			<li class="salmon">Trigonometry</li>
-			<li class="blue">Rad Hats</li>
-			<li class="yellow">Being Silly</li>
-		</ul>
-
-		<h2>Left: Things We Find Important Below: Our Story</h2>
-		<P>Once upon a time there was a group of shapes. They were mostly black and rectangular. They were mean and very serious. <p>And so they kicked the 3 shapes that didn’t conform out of their gang, which was called the Right Angled Gang.</p>
-		<p> And so these 3 shapes were very sad, but found great joy and comfort being around each other. They soon started having a lot of fun, started rocking and rolling, started being silly, and became the most well-known shape gang in the universe.</p>
-		<P> They even started making fun of squares and rectangles in what they like to call ‘Square Offs’!</P>
-
-	</div>
-
 
 */
 
